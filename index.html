@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#17110b">
+    <meta name="description" content="Web app premium de la carte Beno Café.">
+    <title>Beno Café - Web App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css?v=5">
+    <script defer src="app.js?v=5"></script>
+  </head>
+  <body>
+    <main class="app-page" aria-label="Web app Beno Café">
+      <img class="venue-photo" src="assets/beno/bc.png" alt="Terrasse du Beno Café">
+      <div class="photo-wash" aria-hidden="true"></div>
+
+      <section class="app-shell">
+        <header class="brand-header">
+          <p class="brand-kicker">Paris</p>
+          <h1>
+            <a class="brand-link" href="https://www.instagram.com/benocafe.paris/" target="_blank" rel="noopener" aria-label="Ouvrir Instagram Beno Café">Beno Café</a>
+          </h1>
+          <p class="brand-note">Carte du soir</p>
+        </header>
+
+        <section class="app-layout" aria-label="Carte interactive">
+          <div class="menu-workspace glass-panel">
+            <div class="toolbar">
+              <div class="category-tabs" id="categoryTabs" aria-label="Catégories"></div>
+            </div>
+
+            <div class="section-heading">
+              <span id="sectionKicker">Section 3</span>
+              <h2 id="sectionTitle">Carte à dîner</h2>
+            </div>
+
+            <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
